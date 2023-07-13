@@ -27,6 +27,7 @@ export const LoadingSpinner = (props: LoadingSpinnerProps): ReactElement => {
         borderTop: `${borderWidth}px solid ${borderActiveColor}`,
       }}
       className="loader"
+      role="spinner"
       {...rest}
     />
   );

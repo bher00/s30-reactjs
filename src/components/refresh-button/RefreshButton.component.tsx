@@ -21,7 +21,7 @@ export const RefreshButton = (props: ButtonProps): ReactElement => {
   } = props;
 
   return (
-    <button className={`${loading ? 'loading' : ''}`} {...rest}>
+    <button className={`${loading ? 'loading' : ''}`} role="refresh-button" {...rest}>
       {loading ? (
         <LoadingSpinner />
       ) : (

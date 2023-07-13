@@ -11,8 +11,10 @@ export const Label = (props: LabelProps): ReactElement => {
 
   return (
     <div className="label-container" {...rest}>
-      {title && <label>{title}:</label>}
-      <div className="label-value">{value}</div>
+      {title && <label role="title">{title}:</label>}
+      <div className="label-value" role="value">
+        {value}
+      </div>
     </div>
   );
 };
