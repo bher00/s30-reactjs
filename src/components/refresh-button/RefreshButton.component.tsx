@@ -1,21 +1,34 @@
-import type { ButtonHTMLAttributes, ReactElement } from 'react';
-
-import viteRefreshLogo from '~/assets/refresh.svg';
 import './RefreshButton.style.css';
+import type { ButtonHTMLAttributes, ReactElement, ReactNode } from 'react';
+
+import { LoadingSpinner } from '..';
+import viteRefreshLogo from '~/assets/refresh.svg';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  label?: string;
+  label?: ReactNode | string;
   showIcon?: boolean;
+  icon?: ReactNode | string;
+  loading?: boolean;
 }
 
 export const RefreshButton = (props: ButtonProps): ReactElement => {
-  const { label, showIcon = false, ...rest } = props;
+  const {
+    label,
+    showIcon = false,
+    loading = false,
+    icon = <img src={viteRefreshLogo} className="refresh-button-logo" alt="Refresh" />,
+    ...rest
+  } = props;
 
   return (
-    <button {...rest}>
-      {label}
-      {showIcon && (
-        <img src={viteRefreshLogo} className="refresh-button-logo" alt="Refresh" />
+    <button className={`${loading ? 'loading' : ''}`} {...rest}>
+      {loading ? (
+        <LoadingSpinner />
+      ) : (
+        <>
+          {label}
+          {showIcon && icon}
+        </>
       )}
     </button>
   );
