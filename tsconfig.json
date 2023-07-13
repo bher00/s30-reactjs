@@ -22,8 +22,9 @@
     "noFallthroughCasesInSwitch": true,
     "paths": {
       "~/*": ["./src/*"]
-    }
+    },
+    "types": ["vitest/globals"]
   },
-  "include": ["src", ".eslintrc.json", "vite.config.ts"],
+  "include": ["src", ".eslintrc.json", "vite.config.ts", "setup-test.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
