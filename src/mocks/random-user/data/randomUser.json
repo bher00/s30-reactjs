@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Russell",
+                "last": "Martin"
+            },
+            "location": {
+                "street": {
+                    "number": 1916,
+                    "name": "Poplar Dr"
+                },
+                "city": "Bowral",
+                "state": "Northern Territory",
+                "country": "Australia",
+                "postcode": 7243,
+                "coordinates": {
+                    "latitude": "-89.5599",
+                    "longitude": "-25.0282"
+                },
+                "timezone": {
+                    "offset": "-7:00",
+                    "description": "Mountain Time (US & Canada)"
+                }
+            },
+            "email": "russell.martin@example.com",
+            "login": {
+                "uuid": "d833a249-5551-4267-8df9-0ac4ada4e61a",
+                "username": "whitemeercat133",
+                "password": "starcraf",
+                "salt": "wwtfkADH",
+                "md5": "b57b21f89f5c3d670d1e382d2019dcd8",
+                "sha1": "cd75e8d097ec960c1fc677172d770b8d1a54d285",
+                "sha256": "b7459d67700bee5fe98195b4ee3b3f73b809fc0d58e764d0fa1e17b580803f35"
+            },
+            "dob": {
+                "date": "1983-07-01T05:24:43.429Z",
+                "age": 40
+            },
+            "registered": {
+                "date": "2018-02-17T09:38:19.866Z",
+                "age": 5
+            },
+            "phone": "06-8629-4160",
+            "cell": "0429-059-848",
+            "id": {
+                "name": "TFN",
+                "value": "285361838"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/31.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/31.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/31.jpg"
+            },
+            "nat": "AU"
+        }
+    ],
+    "info": {
+        "seed": "f08181d8ae1a1ef5",
+        "results": 1,
+        "page": 1,
+        "version": "1.4"
+    }
+}

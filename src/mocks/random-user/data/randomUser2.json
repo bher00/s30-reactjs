@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "gender": "female",
+            "name": {
+                "title": "Ms",
+                "first": "Saisha",
+                "last": "Acharya"
+            },
+            "location": {
+                "street": {
+                    "number": 4632,
+                    "name": "Camac St"
+                },
+                "city": "Farrukhabad",
+                "state": "Andhra Pradesh",
+                "country": "India",
+                "postcode": 33702,
+                "coordinates": {
+                    "latitude": "7.6282",
+                    "longitude": "157.2472"
+                },
+                "timezone": {
+                    "offset": "-9:00",
+                    "description": "Alaska"
+                }
+            },
+            "email": "saisha.acharya@example.com",
+            "login": {
+                "uuid": "a0d17140-4709-428e-9f16-a07ad98dbdf2",
+                "username": "greenmouse151",
+                "password": "ashton",
+                "salt": "CbJkG4g0",
+                "md5": "db2caeec59363b95b0fd12f730492e78",
+                "sha1": "0af8c356a64950cfa6aafa35b1af0cd1be1c613c",
+                "sha256": "aa787be6ae9928cc412b55846c9321c87bdb919c724c1dab5daeb2e2578ea549"
+            },
+            "dob": {
+                "date": "1972-01-31T10:04:41.286Z",
+                "age": 51
+            },
+            "registered": {
+                "date": "2014-11-18T09:39:48.205Z",
+                "age": 8
+            },
+            "phone": "8587891190",
+            "cell": "8863043879",
+            "id": {
+                "name": "UIDAI",
+                "value": "266339356351"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/83.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/83.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/83.jpg"
+            },
+            "nat": "IN"
+        }
+    ],
+    "info": {
+        "seed": "1ee5f0171e81b8f5",
+        "results": 1,
+        "page": 1,
+        "version": "1.4"
+    }
+}
