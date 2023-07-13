@@ -2,7 +2,7 @@ import './App.css';
 import type { ReactElement } from 'react';
 
 import { useEffect, useState } from 'react';
-import { Label, RefreshButton } from '~/components';
+import { Label, RefreshButton, SwitchTheme } from '~/components';
 import { getRandomUsers } from '~/apis/user';
 import { getEmailAddress, getFullName } from '~/helper';
 
@@ -34,7 +34,12 @@ const App = (): ReactElement => {
 
   return (
     <div className="app-container">
+      <h1>S30 ReactJS</h1>
       <div className="refresh-button-container">
+        <>
+          <h4>Switch Theme</h4>
+          <SwitchTheme />
+        </>
         <RefreshButton
           showIcon
           loading={randomUserLoading}
