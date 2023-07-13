@@ -1,5 +1,5 @@
-import type { HTMLAttributes, ReactElement } from 'react';
 import './Label.style.css';
+import type { HTMLAttributes, ReactElement } from 'react';
 
 interface LabelProps extends HTMLAttributes<HTMLDivElement> {
   title?: string;
