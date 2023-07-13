@@ -5,6 +5,7 @@
 button {
     min-width: 3.7rem;
     min-height: 2.7rem;
+    background: var(--button-background);
 }
 
 .loading:hover {
