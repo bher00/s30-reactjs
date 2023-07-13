@@ -1,0 +1,15 @@
+:root {
+    --background: #ffffff;
+    --text-primary: #213547;
+    --line-border: #dddddd;
+    --button-background: #e9e9e9;
+    --h1: #213547;
+}
+
+[data-theme='dark'] {
+    --background: #373639;
+    --text-primary: #e9e9e9;
+    --line-border: #515151;
+    --button-background: #ededed;
+    --h1: #e5e5e5;
+}
