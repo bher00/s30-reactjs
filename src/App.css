@@ -17,11 +17,3 @@
     justify-content: end;
   }
 }
-
-h4 {
-  color: var(--text-primary);
-}
-
-h1 {
-  color: var(--h1);
-}
