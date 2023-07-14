@@ -1,4 +1,5 @@
 @import url('./theme/var.css');
+@import url('./theme/media-query.css');
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
