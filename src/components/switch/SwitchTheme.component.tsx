@@ -4,15 +4,11 @@ import type { ChangeEvent, HTMLAttributes, ReactElement } from 'react';
 import { useTheme } from '~/hooks/useTheme';
 
 interface SwitchProps extends HTMLAttributes<HTMLDivElement> {
-  size?: number;
-  color?: string;
-  borderWidth?: number;
-  borderActiveColor?: string;
-  borderNotActiveColor?: string;
+  title?: string;
 }
 
 export const SwitchTheme = (props: SwitchProps): ReactElement => {
-  const { ...rest } = props;
+  const { title = 'Switch Theme', ...rest } = props;
 
   const [theme, setTheme] = useTheme('light');
 
@@ -26,14 +22,18 @@ export const SwitchTheme = (props: SwitchProps): ReactElement => {
   };
 
   return (
-    <div className="switch-container" {...rest}>
-      <input
-        type="checkbox"
-        checked={theme === 'light' ? false : true}
-        className="switch-input"
-        onChange={handleChangeTheme}
-      />
-      <div className="switch-toggle"></div>
-    </div>
+    <>
+      <h4>{title}</h4>
+      <div className="switch-container" {...rest}>
+        <input
+          type="checkbox"
+          checked={theme === 'light' ? false : true}
+          className="switch-input"
+          onChange={handleChangeTheme}
+          role="theme"
+        />
+        <div className="switch-toggle"></div>
+      </div>
+    </>
   );
 };

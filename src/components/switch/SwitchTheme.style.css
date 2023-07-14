@@ -39,3 +39,7 @@ input:checked {
         border: 1px solid #1976d2;
     }
 }
+
+h4 {
+    color: var(--text-primary);
+}
